@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* SCROLL REVEAL */
+.homeContent, .aboutMeContent, .skillsContent {
+    visibility: hidden;
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* NAVBAR */
+#navBar {
+    background: rgba(150, 150, 150, 0.11);
+    border-bottom: solid 1px azure;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+.navBarContent {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    font-size: 1.3rem;
+}
+/* Links */
+.navBarContent>li>a {
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+    transition: .5s;
+    color: azure;
+    margin: 20px;
+}
+.navBarContent>li>a:hover {
+    font-weight: bold;
+    transition: .5s;
+}
+
+/* HOME */
+#home {
+    background: rgb(32, 86, 117);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+/* Home content */
+.homeContent {
+    max-width: 80%;
+    text-align: justify;
+}
+#homeDescription {
+    font-size: 2rem;
+    color: azure;
+    margin: 20px 0;
+}
+#homeMyName {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: wheat;
+}
+/* Home Links */
+.homeLinks>a {
+    background-color: transparent;
+    border: solid 1px azure;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .5s;
+    color: azure;
+    padding: 6px;
+    
+}
+.homeLinks>a:hover {
+    background: azure;
+    font-weight: bold;
+    transition: .5s;
+    color: black;
+}
+
+/* ABOUT ME */
+#aboutMe {
+    background: rgb(194, 143, 66);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+.aboutMeContent {
+    max-width: 80%;
+    color: azure;
+}
+.aboutMeContent>p {
+    margin-bottom: 5px;
+    text-indent: 15px;
+} 
+
+/* SKILLS */
+#skills {
+    background: rgb(155, 98, 167);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    height: 100vh;
+    display: flex;
+}
+.skillsContent {
+    max-width: 80%;
+}
+.skillsContentCenter {
+    justify-content: center;
+    display: flex;
+}
+/* Animated block */
+.skillsImages>div {
+    background: azure;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    float: left;
+}
+.skillsImages>div:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+.htmlBox::before {
+    background: linear-gradient(0deg, transparent, #E74C3C, #E74C3C); 
+}
+.cssBox::before {
+    background: linear-gradient(0deg, transparent, #3498DB, #3498DB); 
+}
+.jsBox::before {
+    background: linear-gradient(0deg, transparent, #F1C40F, #F1C40F);
+}
+.javaBox::before {
+    background: linear-gradient(0deg, transparent, #3498DB, #3498DB);
+}
+.skillsImages>div::before {
+    animation: animateSkills 6s linear infinite;
+    transform-origin: bottom right;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    content: '';
+    left: -50%;
+    top: -50%;
+}
+@keyframes animateSkills {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.form {
+    background: azure;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 10;
+    inset: 2px;
+}
+/* Skill text */
+#skillText {
+    border-left: 5px solid;
+    text-align: justify;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 300px;
+    transition: .5s;
+    font-size: 1rem;
+    color: azure;
+    padding: 20px;
+    opacity: 0;
+    width: 80%;
+}
+
+/* FOOTER */
+#footer {
+    background-color: rgb(5, 48, 48);
+    text-align: center;
+    font-size: .5rem;
+    color: azure;
+    padding: 5px;
+}
+
+/* SCREEN RULES */
+@media all and (max-width: 1000px) {
+    .skillsImages>div {
+        height: 90px;
+        width: 90px;
+        margin:5px;
+        margin-bottom: 90px;
+    }
+    .skillsImages>div::before {
+        height: 90px;
+        width: 90px;
+    }
+    #skillText {
+        font-size: 2rem;
+    }
+}
+@media all and (max-width: 800px) {
+    .skillsImages>div {
+        height: 80px;
+        width: 80px;
+        margin:5px;
+        margin-bottom: 80px;
+    }
+    .skillsImages>div::before {
+        height: 80px;
+        width: 80px;
+    }
+    #skillText {
+        font-size: 1.5rem;
+    }
+}
+@media all and (max-width: 600px) {
+    .skillsImages>div {
+        height: 70px;
+        width: 70px;
+        margin:5px;
+        margin-bottom: 70px;
+    }
+    .skillsImages>div::before {
+        height: 70px;
+        width: 70px;
+    }
+    #skillText {
+        font-size: 1rem;
+    }
+}
+@media all and (max-width: 400px) {
+    .skillsImages>div {
+        height: 50px;
+        width: 50px;
+        margin:5px;
+        margin-bottom: 80px;
+    }
+    .skillsImages>div::before {
+        height: 50px;
+        width: 50px;
+    }
+    #skillText {
+        font-size: 1rem;
+    }
+}
+@media all and (max-width: 300px) {
+    .container {
+        font-size: 1rem;
+    }
+    .navBarContent {
+        font-size: 1rem;
+    }
+    .skillsImages>div {
+        height: 40px;
+        width: 40px;
+        margin:5px;
+        margin-bottom: 40px;
+    }
+    .skillsImages>div::before {
+        height: 40px;
+        width: 40px;
+    }
+    #skillText {
+        font-size: 1rem;
+    }
+}
