@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Breno Oliveira da Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div id="navBar">
+            <nav class="navBar">
+                <ul class="navBarContent" onclick="getElementById('closeMenu').checked=false;">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- HOME -->
+        <section id="home">
+            <div class="homeContent">
+                <p id="homeDescription">
+                    Hi, I'm
+                    <br>
+                    <span id="homeMyName">Breno Oliveira da Silva</span>
+                    <br>
+                    Web Developer
+                </p>
+                <div class="homeLinks">
+                    <a href="https://github.com/BrenoOliveiraSilva" target="_blank">GitHub</a>
+                    <a href="mailto:breno.o.silva.2601@gmail.com" target="_blank">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="aboutMe">
+            <div class="aboutMeContent">
+                <h2>About Me</h2>
+                <p>
+                    My name is Breno, I love to create and develop beautiful things, I always try to learn more and give my all to improve more and more. Currently I'm focused on learning not only the Front-End but also the Back-End.
+                </p>
+                <p>
+                    I'm currently learning technologies such as HTML, CSS, JavaScript and Java, and as you can see, this is an example of what I know, but this is just the beginning, soon I will create new projects that demonstrate my evolution.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="skillsContent">
+                <h2>Here's some of my skills</h2>
+                <p>Click to see</p>
+                <div class="skillsContentCenter">
+                    <div class="skillsImages">
+                        <div class="htmlBox" onclick="skillHTML()">
+                            <div class="form">
+                                <svg class="htmlImage" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M155.74063,7.99531c-0.645,-0.71219 -1.57219,-1.11531 -2.53969,-1.11531h-134.40187c-0.9675,0 -1.89469,0.40313 -2.53969,1.11531c-0.65844,0.71219 -0.98094,1.66625 -0.88688,2.63375l12.10719,135.62469c0.12094,1.42438 1.11531,2.60688 2.48594,3.01l55.08031,15.72188c0.29563,0.09406 0.61813,0.13437 0.94063,0.13437c0.3225,0 0.63156,-0.04031 0.94062,-0.13437l55.12063,-15.72188c1.37062,-0.40312 2.35156,-1.58562 2.48594,-3.01l12.09375,-135.62469c0.09406,-0.9675 -0.22844,-1.92156 -0.88687,-2.63375zM126.75594,54.75781h-64.715l1.54531,17.50906h61.61094l-4.6225,51.74781l-34.60156,10.45438l-0.33594,-0.1075l-34.19844,-10.36031l-1.86781,-21.08344h16.75656l0.72563,8.18344l19.12156,4.00438l18.77219,-4.00438l2.00219,-22.145h-58.62781l-4.55531,-50.92812h84.48156z"></path></g></g></svg>
+                            </div>
+                        </div>
+                        <div class="cssBox" onclick="skillCSS()">
+                            <div class="form">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none" fill-rule="nonzero"></path><g fill="#3498db" fill-rule="evenodd"><path d="M144.48,20.64l-10.32,116.96l-48.16,13.76l-48.16,-13.76l-10.32,-116.96zM57.79469,96.32h13.76l0.33594,8.6l14.10937,4.81063l14.10938,-4.81063l1.02125,-15.48h-30.26125l-0.69875,-13.76h31.65875l1.02125,-13.76h-47.46125l-1.03469,-13.76h62.95469l-1.72,27.52l-2.41875,39.56l-27.17063,8.94938l-27.17062,-8.94938z"></path></g></g></svg>
+                            </div>
+                        </div>
+                        <div class="jsBox" onclick="skillJS()">
+                            <div class="form">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#f1c40f"><path d="M149.07563,13.76h-126.13781c-5.06594,0 -9.17781,4.11188 -9.17781,9.17781v126.12437c0,5.06594 4.11188,9.17781 9.17781,9.17781h126.12437c5.06594,0 9.17781,-4.11187 9.17781,-9.16437v-126.13781c0,-5.06594 -4.11187,-9.17781 -9.16437,-9.17781zM92.88,124.47156c0,13.74656 -8.0625,20.00844 -19.83375,20.00844c-10.6425,0 -18.31531,-7.13531 -21.44625,-13.76l10.81719,-6.54406c2.08281,3.69531 5.25406,6.54406 9.82281,6.54406c4.36719,0 6.88,-1.70656 6.88,-8.34469v-43.25531h13.76zM122.72469,144.48c-12.18781,0 -19.10812,-6.14094 -22.96469,-13.76l10.32,-6.88c2.80844,4.59563 5.87219,8.98969 12.34906,8.98969c5.44219,0 8.29094,-2.71437 8.29094,-6.47687c0,-4.48813 -2.95625,-6.08719 -8.93594,-8.7075l-3.27875,-1.41094c-9.47344,-4.03125 -15.77563,-9.08375 -15.77563,-19.78c0,-9.83625 7.51156,-17.33438 19.22906,-17.33438c8.34469,0 14.33781,2.9025 18.66469,10.50813l-10.2125,6.57094c-2.2575,-4.04469 -4.67625,-5.63031 -8.45219,-5.63031c-3.84312,0 -6.27531,2.44563 -6.27531,5.63031c0,3.93719 2.43219,5.52281 8.0625,7.96844l3.27875,1.41094c11.16656,4.77031 17.45531,9.64813 17.45531,20.61313c0,11.81156 -9.28531,18.28844 -21.75531,18.28844z"></path></g></g></svg>
+                            </div>
+                        </div>
+                        <div class="javaBox" onclick="skillJava()">
+                            <div class="form">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#F44336" d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"></path><path fill="#F44336" d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z"></path><g><path fill="#1565C0" d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z"></path><path fill="#1565C0" d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z"></path><path fill="#1565C0" d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z"></path><path fill="#1565C0" d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z"></path><path fill="#1565C0" d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p data-js="typing" id="skillText"></p>
+        </section>
+
+        <!-- FOOTER -->
+        <section id="footer">
+            <footer class="footerContent">
+                <p>Made by Breno Oliveira da Silva</p>
+            </footer>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
